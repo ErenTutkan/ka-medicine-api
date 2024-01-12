@@ -1,6 +1,6 @@
 {
   "name": "kolay_asistan_medicine_api",
-  "version": "0.0.1",
+  "version": "v1",
   "description": "Kolay Asistan medicine application api layer. Revision Date: 04.12.2022",
   "license": "Unlicense",
   "main": "dist/index.js",

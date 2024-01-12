@@ -1,12 +1,12 @@
-# KolayAsistanMedicineApi.TicketApi
+# KolayAsistanMedicineApi.TICKETApi
 
 All URIs are relative to *https://ka-medicine.herokuapp.com/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ticketControllerFindByBarcode**](TicketApi.md#ticketControllerFindByBarcode) | **GET** /ticket/findByBarcode/{barcode} | Get medicine detail
-[**ticketControllerFindByName**](TicketApi.md#ticketControllerFindByName) | **GET** /ticket/findByName/{ticketName} | Get medicine detail
-[**ticketControllerFindByTicketFromCache**](TicketApi.md#ticketControllerFindByTicketFromCache) | **POST** /ticket/findByTicketFromCache | Get medicine detail from cache
+[**ticketControllerFindByBarcode**](TICKETApi.md#ticketControllerFindByBarcode) | **GET** /ticket/findByBarcode/{barcode} | Get medicine detail
+[**ticketControllerFindByName**](TICKETApi.md#ticketControllerFindByName) | **GET** /ticket/findByName/{ticketName} | Get medicine detail
+[**ticketControllerFindByTicketFromCache**](TICKETApi.md#ticketControllerFindByTicketFromCache) | **POST** /ticket/findByTicketFromCache | Get medicine detail from cache
 
 
 
@@ -21,7 +21,7 @@ Get medicine detail
 ```javascript
 import KolayAsistanMedicineApi from 'kolay_asistan_medicine_api';
 
-let apiInstance = new KolayAsistanMedicineApi.TicketApi();
+let apiInstance = new KolayAsistanMedicineApi.TICKETApi();
 let barcode = "barcode_example"; // String | 
 apiInstance.ticketControllerFindByBarcode(barcode).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -63,7 +63,7 @@ Get medicine detail
 ```javascript
 import KolayAsistanMedicineApi from 'kolay_asistan_medicine_api';
 
-let apiInstance = new KolayAsistanMedicineApi.TicketApi();
+let apiInstance = new KolayAsistanMedicineApi.TICKETApi();
 apiInstance.ticketControllerFindByName().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
@@ -101,7 +101,7 @@ Get medicine detail from cache
 ```javascript
 import KolayAsistanMedicineApi from 'kolay_asistan_medicine_api';
 
-let apiInstance = new KolayAsistanMedicineApi.TicketApi();
+let apiInstance = new KolayAsistanMedicineApi.TICKETApi();
 let requestTicketMedicine = new KolayAsistanMedicineApi.RequestTicketMedicine(); // RequestTicketMedicine | 
 apiInstance.ticketControllerFindByTicketFromCache(requestTicketMedicine).then((data) => {
   console.log('API called successfully. Returned data: ' + data);

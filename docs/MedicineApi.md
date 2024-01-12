@@ -1,13 +1,13 @@
-# KolayAsistanMedicineApi.MedicineApi
+# KolayAsistanMedicineApi.MEDICINEApi
 
 All URIs are relative to *https://ka-medicine.herokuapp.com/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**medicineControllerFindAll**](MedicineApi.md#medicineControllerFindAll) | **GET** /medicine | Get all medicine list
-[**medicineControllerFindByBarcode**](MedicineApi.md#medicineControllerFindByBarcode) | **GET** /medicine/findByBarcode/{barcode} | Get medicine by barcode
-[**medicineControllerFindByName**](MedicineApi.md#medicineControllerFindByName) | **GET** /medicine/findByName/{medicineName} | Get medicine by name
-[**medicineControllerFindOne**](MedicineApi.md#medicineControllerFindOne) | **GET** /medicine/{id} | Get medicine by id
+[**medicineControllerFindAll**](MEDICINEApi.md#medicineControllerFindAll) | **GET** /medicine | Get all medicine list
+[**medicineControllerFindByBarcode**](MEDICINEApi.md#medicineControllerFindByBarcode) | **GET** /medicine/findByBarcode/{barcode} | Get medicine by barcode
+[**medicineControllerFindByName**](MEDICINEApi.md#medicineControllerFindByName) | **GET** /medicine/findByName/{medicineName} | Get medicine by name
+[**medicineControllerFindOne**](MEDICINEApi.md#medicineControllerFindOne) | **GET** /medicine/{id} | Get medicine by id
 
 
 
@@ -22,7 +22,7 @@ Get all medicine list
 ```javascript
 import KolayAsistanMedicineApi from 'kolay_asistan_medicine_api';
 
-let apiInstance = new KolayAsistanMedicineApi.MedicineApi();
+let apiInstance = new KolayAsistanMedicineApi.MEDICINEApi();
 let filterModel = new KolayAsistanMedicineApi.FilterModel(); // FilterModel | 
 apiInstance.medicineControllerFindAll(filterModel).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -64,7 +64,7 @@ Get medicine by barcode
 ```javascript
 import KolayAsistanMedicineApi from 'kolay_asistan_medicine_api';
 
-let apiInstance = new KolayAsistanMedicineApi.MedicineApi();
+let apiInstance = new KolayAsistanMedicineApi.MEDICINEApi();
 let barcode = "barcode_example"; // String | 
 apiInstance.medicineControllerFindByBarcode(barcode).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -106,7 +106,7 @@ Get medicine by name
 ```javascript
 import KolayAsistanMedicineApi from 'kolay_asistan_medicine_api';
 
-let apiInstance = new KolayAsistanMedicineApi.MedicineApi();
+let apiInstance = new KolayAsistanMedicineApi.MEDICINEApi();
 apiInstance.medicineControllerFindByName().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
@@ -144,7 +144,7 @@ Get medicine by id
 ```javascript
 import KolayAsistanMedicineApi from 'kolay_asistan_medicine_api';
 
-let apiInstance = new KolayAsistanMedicineApi.MedicineApi();
+let apiInstance = new KolayAsistanMedicineApi.MEDICINEApi();
 let id = "id_example"; // String | 
 apiInstance.medicineControllerFindOne(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
